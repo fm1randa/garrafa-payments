@@ -53,9 +53,9 @@ yarn backend:dev
 
 ## Como usar o projeto
 
-- Acesse o frontend em localhost:3000
-- Acesse o backend em localhost:3001
-- Acesse a documentação da API em localhost:3001/api
+- Acesse o frontend em http://localhost:3000
+- Acesse o backend em http://localhost:3001
+- Acesse a documentação da API em http://localhost:3001/api
 
 ## Solução de problemas
 
