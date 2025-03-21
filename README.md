@@ -13,25 +13,25 @@ Antes de começar, você precisa ter instalado na sua máquina:
 
 ## Como rodar o projeto
 
-Instale as dependências:
+**Instale as dependências:**
 
 ```bash
 yarn
 ```
 
-Rode o banco de dados:
+**Abra o Docker Desktop** (ou inicie o *daemon* do docker de outro jeito, caso você o use sem o Docker Desktop) **e rode o banco de dados:**
 
 ```bash
 docker-compose up -d
 ```
 
-Configure o Prisma:
+**Configure o Prisma:**
 
 ```bash
 cd backend && yarn prisma generate && yarn prisma db push && cd ..
 ```
 
-Rode o frontend juntamente com o backend:
+**Rode o frontend juntamente com o backend:**
 
 ```
 yarn dev
@@ -50,3 +50,18 @@ yarn frontend:dev
 ```bash
 yarn backend:dev
 ```
+
+## Como usar o projeto
+
+- Acesse o frontend em localhost:3000
+- Acesse o backend em localhost:3001
+- Acesse a documentação da API em localhost:3001/api
+
+## Solução de problemas
+
+### #1
+```
+unable to get image 'postgres:latest': error during connect: Get "http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.47/images/postgres:latest/json": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+```
+
+Verifique se o Docker está rodando. Abra o Docker Desktop ou inicie o *daemon* do docker de outro jeito, caso você o use sem o Docker Desktop.
