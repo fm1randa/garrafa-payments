@@ -1,0 +1,18 @@
+{
+  "name": "payment-system",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "frontend:dev": "yarn workspace frontend dev",
+    "backend:dev": "yarn workspace backend start:dev",
+    "dev": "concurrently \"yarn frontend:dev\" \"yarn backend:dev\"",
+    "build": "yarn workspaces run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "husky": "^9.0.11"
+  }
+}
