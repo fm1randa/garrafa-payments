@@ -26,7 +26,7 @@ docker-compose up -d
 
 Configure o Prisma:
 
-```
+```bash
 cd backend && yarn prisma generate && yarn prisma db push
 ```
 
@@ -38,6 +38,6 @@ yarn frontend:dev
 
 ### Back-end
 
-```
+```bash
 yarn backend:dev
 ```
