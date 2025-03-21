@@ -8,7 +8,7 @@
   "scripts": {
     "frontend:dev": "yarn workspace frontend dev",
     "backend:dev": "yarn workspace backend start:dev",
-    "dev": "concurrently \"yarn frontend:dev\" \"yarn backend:dev\"",
+    "dev": "concurrently --names \"FRONT,BACK\" \"yarn frontend:dev\" \"yarn backend:dev\"",
     "build": "yarn workspaces run build"
   },
   "devDependencies": {
