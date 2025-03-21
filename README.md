@@ -8,9 +8,10 @@ Antes de começar, você precisa ter instalado na sua máquina:
 
 🔹 **Node →** https://nodejs.org/en \
 🔹 **Yarn →** `npm install yarn -g` \
-🔹 **Docker →** https://www.docker.com/products/docker-desktop/
+🔹 **Docker →** https://www.docker.com/products/docker-desktop/ \
+🔹 **Conventional Commits VSCode Extension →** https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits
 
-## Como rodar
+## Como rodar o projeto
 
 Instale as dependências:
 
@@ -27,8 +28,16 @@ docker-compose up -d
 Configure o Prisma:
 
 ```bash
-cd backend && yarn prisma generate && yarn prisma db push
+cd backend && yarn prisma generate && yarn prisma db push && cd ..
 ```
+
+Rode o frontend juntamente com o backend:
+
+```
+yarn dev
+```
+
+## Como rodar o front/back separadamente
 
 ### Front-end
 
