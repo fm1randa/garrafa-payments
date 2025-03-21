@@ -65,3 +65,26 @@ unable to get image 'postgres:latest': error during connect: Get "http://%2F%2F.
 ```
 
 Verifique se o Docker está rodando. Abra o Docker Desktop ou inicie o *daemon* do docker de outro jeito, caso você o use sem o Docker Desktop.
+
+### #2
+
+```
+You may have to run ${qe("prisma generate")} for your changes to take effect.`,this.config.clientVersion);return t}}parseEngineResponse(t){if(!t)throw new B("Response from the Engine was empty",{clientVersion:this.config.clientVersion});...
+```
+
+1. Verifique se o Docker está rodando. Abra o Docker Desktop ou inicie o *daemon* do docker de outro jeito, caso você o use sem o Docker Desktop.
+2. Verifique a parte "Configure o Prisma" em [Como rodar o projeto](#como-rodar-o-projeto)
+
+### #3
+
+```
+[BACK] PrismaClientInitializationError: Can't reach database server at `localhost:5432`
+[BACK]
+[BACK] Please make sure your database server is running at `localhost:5432`.
+[BACK]     at t (C:\Users\filip\Repositories\garrafa-payments\node_modules\@prisma\client\runtime\library.js:112:2488)
+...
+```
+
+1. Verifique se o Docker está rodando. Abra o Docker Desktop ou inicie o *daemon* do docker de outro jeito, caso você o use sem o Docker Desktop.
+2. Verifique a parte "rode o banco de dados" em [Como rodar o projeto](#como-rodar-o-projeto)
+
